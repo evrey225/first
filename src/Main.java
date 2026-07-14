@@ -1,12 +1,11 @@
+import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
-        int x = 42;
-        float y = 2;
-        double z = 1.1;
-        boolean b = true;
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
-        System.out.println(b);
+        Scanner sc = new Scanner(System.in);
+        int st = sc.nextInt();
+        if (st >= 18 ) {
+        System.out.println("Доступ дозволено");}
+        else{
+        System.out.println("Доступ заборонено");}
     }
 }
