@@ -1,15 +1,13 @@
 import java.util.Scanner;
 class Main {
-public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int x = sc.nextInt();
-    int z = sc.nextInt();
-    try {
-        int res = x/z;
-        System.out.println(res);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String x = sc.next();
+        String z = sc.next();
+        if (x.equals(z)) {
+            System.out.println("Тест пройдено");
+        } else {
+            System.out.println("Тест не пройдено");
+        }
     }
-    catch (Exception e){
-    System.out.println("На нуль ділити не можна");
-    }
-}
 }
