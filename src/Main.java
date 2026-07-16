@@ -1,17 +1,11 @@
 import java.util.Scanner;
+
 class Main {
     public static void main(String[] args) {
-        int[] num = { 1, 4, 5, 6, 9, 0, 3, 2, 1};
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int res = -1;
-        for(int i=0; i < num.length; i++) {
-            if (num[i] == x){
-                res = i;
-                break;
-            }
-        }
-            System.out.println(res);
-
-        }
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int result = cl.add(num1, num2);
+        System.out.println(result);
     }
+}
